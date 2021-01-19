@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/sh
 var=$(echo -e "$(lsblk | grep sd)\nAbort" | dmenu -l 20)
 if [ $var == "Abort" ] ;then
     echo "[*]ABORTED..."
